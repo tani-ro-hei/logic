@@ -4,7 +4,9 @@ This Scheme (Racket) program demonstrates that the truth function **logical NOR*
 
 ## Description
 
-The higher-order function `truth-func`, constructed with only **NOR**, take six arguments `map-11`, `map-10`, `map-01`, `map-00`, `x`, `y`, where the function `map-xy` is composed just of **NOR** and `x`, `y` are truth values, and return the binary truth function which value of arguments **(x, y)** is equal to the `(map-xy x y)`. So, if a `func-imply` is defined as below:
+The higher-order function `truth-func`, constructed with only **NOR**, take six arguments `map-11`, `map-10`, `map-01`, `map-00`, `x`, `y`, where the function `map-xy` is composed just of **NOR** and `x`, `y` are truth values, and return the binary truth function which value of arguments **(x, y)** is equal to the `(map-xy x y)`.
+
+So, if a `func-imply` is defined as below:
 
 ```
 (define func-imply
