@@ -86,7 +86,7 @@
 
 ;; <definition of conditional branch>
 ;; If the x is #t, the value of (if-else x y z) equal to y, and if the x is #f, it equal to z.
-;; Remark that (if-else x y z) = 1 iff (x = 1 & y = 1)or(x = 0 & z = 1).
+;; Remark that (if-else x y z) = 1 iff (x = 1 & y = 1) or (x = 0 & z = 1).
 ;; Therefore, (if-else x y z) = 1 iff (func-nor (x-is-1-and-y-is-1 x y) (x-is-0-and-z-is-1 x z)) = 0.
 (define x-is-1-and-y-is-1
   (lambda (x y)
@@ -135,7 +135,7 @@
 )
 
 
-;; <examples of concrete truth functions>
+;; <examples of some concrete truth functions>
 
 ;; (func-imply #t #t) -> #t
 ;; (func-imply #t #f) -> #f
